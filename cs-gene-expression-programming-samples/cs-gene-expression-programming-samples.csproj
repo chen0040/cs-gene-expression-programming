@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DA44D677-A6E7-4C64-B41D-17ECD7851562}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{70553E7D-F5A4-4399-B9C8-878F4A566C04}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GEP</RootNamespace>
-    <AssemblyName>cs-gene-expression-programming</AssemblyName>
+    <AssemblyName>cs-gene-expression-programming-samples</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,53 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlgorithmModels\Crossover\GEPCrossoverInstructionFactory.cs" />
-    <Compile Include="AlgorithmModels\Crossover\GEPCrossoverInstruction_OnePoint.cs" />
-    <Compile Include="AlgorithmModels\Mutation\GEPMutationInstructionFactory.cs" />
-    <Compile Include="AlgorithmModels\Mutation\GEPMutationInstruction_UniformRandom.cs" />
-    <Compile Include="AlgorithmModels\PopInit\GEPPopInitInstructionFactory.cs" />
-    <Compile Include="AlgorithmModels\PopInit\GEPPopInitInstruction_Random.cs" />
-    <Compile Include="ComponentModels\GEPConfig.cs" />
-    <Compile Include="ComponentModels\GEPPop.cs" />
-    <Compile Include="ComponentModels\GEPProgram.cs" />
-    <Compile Include="ComponentModels\GEPSolution.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="ScriptNames.cs" />
+    <Compile Include="SpiralFitnessCase.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GEPConfig.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GEPUndefined.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CrossoverInstructionFactory.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MutationInstructionFactory.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PopInitInstructionFactory.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ReproductionSelectionInstructionFactory.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SurvivalInstructionFactory.xml" />
+    <ProjectReference Include="..\cs-gene-expression-programming\cs-gene-expression-programming.csproj">
+      <Project>{da44d677-a6e7-4c64-b41d-17ecd7851562}</Project>
+      <Name>cs-gene-expression-programming</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
