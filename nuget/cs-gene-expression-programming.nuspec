@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>cs-gene-expression-programming</id>
+    <version>1.0.1</version>
+    <authors>chen0040</authors>
+    <owners>chen0040</owners>
+    <licenseUrl>https://github.com/chen0040/cs-gene-expression-programming/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/chen0040/cs-gene-expression-programming</projectUrl>
+    <iconUrl>https://rawgit.com/chen0040/cs-gene-expression-programming/master/icon.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Gene Expression Programming</description>
+    <releaseNotes>Gene Expression Programming in .NET 4.5.2</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Genetic Programming, Gene Expression Programming, c-sharp</tags>
+    <dependencies>
+      
+    </dependencies>
+  </metadata>
+</package>
