@@ -10,7 +10,7 @@ Install-Package cs-gene-expression-programming -Version 1.0.1
 
 # Usage
 
-The sample code belows show how to use the Grammatical Evolution to solve the spiral classification problem:
+The sample code belows show how to use the Gene Expression Programming to solve the spiral classification problem:
 
 ```cs 
 class Program
