@@ -5,7 +5,7 @@ Gene expression programming implemented using C#
 # Install
 
 ```bash
-Install-Package cs-gene-expression-programming -Version 1.0.1
+Install-Package cs-gene-expression-programming -Version 1.0.2
 ```
 
 # Usage

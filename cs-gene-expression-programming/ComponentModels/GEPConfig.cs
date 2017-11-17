@@ -52,6 +52,8 @@ namespace GEP.ComponentModels
 
                 }
 
+                return scriptPath;
+
             }
             return null;
         }
