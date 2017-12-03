@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="cs-gene-expression-programming, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\cs-gene-expression-programming.1.0.3\lib\net452\Release\cs-gene-expression-programming.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="cs-tree-genetic-programming, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\cs-tree-genetic-programming.1.0.5\lib\net452\Release\cs-tree-genetic-programming.dll</HintPath>
+      <HintPath>..\packages\cs-gene-expression-programming.1.0.3\lib\net452\Release\cs-tree-genetic-programming.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -54,12 +58,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\cs-gene-expression-programming\cs-gene-expression-programming.csproj">
-      <Project>{da44d677-a6e7-4c64-b41d-17ecd7851562}</Project>
-      <Name>cs-gene-expression-programming</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
